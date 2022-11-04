@@ -62,105 +62,103 @@ let url = new URL(window.location.href)
 let textoAnterior = url.searchParams.get('texto')
 texto.value = textoAnterior
 
-/*
-let btns = document.getElementsByClassName("boton1")
+// let btns = document.getElementsByClassName("boton1")
 
-for(let i = 0; i < btns.length; i++) {
-    console.log(btns[i])
-    btns[i].addEventListener("mouseenter", handleEnter)
-    btns[i].addEventListener("mouseleave", handleLeave)
-}
+// for(let i = 0; i < btns.length; i++) {
+//     console.log(btns[i])
+//     btns[i].addEventListener("mouseenter", handleEnter)
+//     btns[i].addEventListener("mouseleave", handleLeave)
+// }
 
-let botonesnum = document.getElementsByClassName("numero")
+// let botonesnum = document.getElementsByClassName("numero")
 
-for(let i = 0; i < botonesnum.length; i++) {
-    console.log(botonesnum[i])
-    botonesnum[i].addEventListener("mouseenter", handleEnter)
-    botonesnum[i].addEventListener("mouseleave", handleLeave)
-}
+// for(let i = 0; i < botonesnum.length; i++) {
+//     console.log(botonesnum[i])
+//     botonesnum[i].addEventListener("mouseenter", handleEnter)
+//     botonesnum[i].addEventListener("mouseleave", handleLeave)
+// }
 
-let space = document.getElementsByClassName("btnspace")
+// let space = document.getElementsByClassName("btnspace")
 
-for (let i = 0; i < space.length; i++) {
-    console.log(space[i])
-    space[i].addEventListener("mouseenter", espacio)
-    space[i].addEventListener("mouseleave", handleLeave)
-}
+// for (let i = 0; i < space.length; i++) {
+//     console.log(space[i])
+//     space[i].addEventListener("mouseenter", espacio)
+//     space[i].addEventListener("mouseleave", handleLeave)
+// }
 
-let backspace = document.getElementsByClassName("btndelete")
+// let backspace = document.getElementsByClassName("btndelete")
 
-for (let i = 0; i < backspace.length; i++) {
-    console.log(backspace[i])
-    backspace[i].addEventListener("mouseenter", borrar)
-    backspace[i].addEventListener("mouseleave", handleLeave)
-}
+// for (let i = 0; i < backspace.length; i++) {
+//     console.log(backspace[i])
+//     backspace[i].addEventListener("mouseenter", borrar)
+//     backspace[i].addEventListener("mouseleave", handleLeave)
+// }
 
-let borrar_todo = document.getElementsByClassName("btnborrar")
+// let borrar_todo = document.getElementsByClassName("btnborrar")
 
-for (let i = 0; i < borrar_todo.length; i++) {
-    console.log(borrar_todo[i])
-    borrar_todo[i].addEventListener("mouseenter", borrar_completo)
-    borrar_todo[i].addEventListener("mouseleave", handleLeave)
-}
+// for (let i = 0; i < borrar_todo.length; i++) {
+//     console.log(borrar_todo[i])
+//     borrar_todo[i].addEventListener("mouseenter", borrar_completo)
+//     borrar_todo[i].addEventListener("mouseleave", handleLeave)
+// }
 
-let seccionA = document.getElementsByClassName ("btnseccionA")
+// let seccionA = document.getElementsByClassName ("btnseccionA")
 
-for (let i = 0; i < seccionA.length; i++) {
-    console.log(seccionA[i])
-    seccionA[i].addEventListener("mouseenter", seccion1)
-    seccionA[i].addEventListener("mouseleave", handleLeave)
-}
+// for (let i = 0; i < seccionA.length; i++) {
+//     console.log(seccionA[i])
+//     seccionA[i].addEventListener("mouseenter", seccion1)
+//     seccionA[i].addEventListener("mouseleave", handleLeave)
+// }
 
-let seccionJ = document.getElementsByClassName ("btnseccionJ")
+// let seccionJ = document.getElementsByClassName ("btnseccionJ")
 
-for (let i = 0; i < seccionJ.length; i++) {
-    console.log(seccionJ[i])
-    seccionJ[i].addEventListener("mouseenter", seccion2)
-    seccionJ[i].addEventListener("mouseleave", handleLeave)
-}
+// for (let i = 0; i < seccionJ.length; i++) {
+//     console.log(seccionJ[i])
+//     seccionJ[i].addEventListener("mouseenter", seccion2)
+//     seccionJ[i].addEventListener("mouseleave", handleLeave)
+// }
 
-let seccionS = document.getElementsByClassName ("btnseccionS")
+// let seccionS = document.getElementsByClassName ("btnseccionS")
 
-for (let i = 0; i < seccionS.length; i++) {
-    console.log(seccionS[i])
-    seccionS[i].addEventListener("mouseenter", seccion3)
-    seccionS[i].addEventListener("mouseleave", handleLeave)
-}
+// for (let i = 0; i < seccionS.length; i++) {
+//     console.log(seccionS[i])
+//     seccionS[i].addEventListener("mouseenter", seccion3)
+//     seccionS[i].addEventListener("mouseleave", handleLeave)
+// }
 
 
-let seccion0 = document.getElementsByClassName ("btnseccion0")
+// let seccion0 = document.getElementsByClassName ("btnseccion0")
 
-for (let i = 0; i < seccion0.length; i++) {
-    console.log(seccion0[i])
-    seccion0[i].addEventListener("mouseenter", seccion4)
-    seccion0[i].addEventListener("mouseleave", handleLeave)
-}
+// for (let i = 0; i < seccion0.length; i++) {
+//     console.log(seccion0[i])
+//     seccion0[i].addEventListener("mouseenter", seccion4)
+//     seccion0[i].addEventListener("mouseleave", handleLeave)
+// }
 
-let seccionSS = document.getElementsByClassName ("btnseccionSS")
+// let seccionSS = document.getElementsByClassName ("btnseccionSS")
 
-for (let i = 0; i < seccionSS.length; i++) {
-    console.log(seccionSS[i])
-    seccionSS[i].addEventListener("mouseenter", seccion5)
-    seccionSS[i].addEventListener("mouseleave", handleLeave)
-}
+// for (let i = 0; i < seccionSS.length; i++) {
+//     console.log(seccionSS[i])
+//     seccionSS[i].addEventListener("mouseenter", seccion5)
+//     seccionSS[i].addEventListener("mouseleave", handleLeave)
+// }
 
-let inicio = document.getElementsByClassName("volver")
+// let inicio = document.getElementsByClassName("volver")
 
-for (let i = 0; i < inicio.length; i++) {
-    console.log(inicio[i])
-    inicio[i].addEventListener("mouseenter", vinicio)
-    inicio[i].addEventListener("mouseleave", handleLeave)
-}
+// for (let i = 0; i < inicio.length; i++) {
+//     console.log(inicio[i])
+//     inicio[i].addEventListener("mouseenter", vinicio)
+//     inicio[i].addEventListener("mouseleave", handleLeave)
+// }
 
-let btnenter = document.getElementsByClassName ("done")
+// let btnenter = document.getElementsByClassName ("done")
 
-for (let i = 0; i < btnenter.length; i++) {
-    console.log(btnenter[i])
-    btnenter[i].addEventListener("mouseenter", done)
-    btnenter[i].addEventListener("mouseleave", handleLeave)
-}
-*/
-//Funciones
+// for (let i = 0; i < btnenter.length; i++) {
+//     console.log(btnenter[i])
+//     btnenter[i].addEventListener("mouseenter", done)
+//     btnenter[i].addEventListener("mouseleave", handleLeave)
+// }
+// //Funciones
 //let txtArea = document.getElementById("textArea")
 
 function handleEnter(e) { 
@@ -179,7 +177,7 @@ function handleEnter(e) {
                 setTimeout (() => {
                     texto.value = texto.value + e.innerHTML;
                     tiped = true
-                }, 2000);
+                }, 1500);
                 
 
             } else if (cname === "btnspace" && tiped === false) {
@@ -187,21 +185,21 @@ function handleEnter(e) {
                 setTimeout (() => {
                     texto.value = texto.value += " ";
                     tiped = true
-                }, 2000);
+                }, 1500);
                 
             } else if (cname === "btndelete" && tiped === false) {
 
                 setTimeout (() => {
                     texto.value = texto.value.substring(0, texto.value.length - 1);
                     tiped = true
-                }, 2000);
+                }, 1500);
                 
             } else if (cname === "btnborrar" && tiped === false) {
 
                 setTimeout (() => {
                     texto.value = texto.value.substring(0, texto.value);
                     tiped = true
-                }, 2000);
+                }, 1500);
 
             } else if (cname === "btnseccionA" && tiped === false) {
                 seccion1(e);
@@ -247,7 +245,7 @@ function vinicio(e) {
     setTimeout(() => {
         if (onButton === e) {
             e.classList.add("hover");
-            window.location.href = './index.html'
+            window.location.href = './C:\Users\Gamer\Downloads\ltokin-3.11-main\ltokin-3.11-main\index.html'
         }
     }, 1500);
 }
@@ -263,7 +261,7 @@ function done(e) {
             msg.lang = 'es'
             window.speechSynthesis.speak(msg)
         }
-    }, 2500);
+    }, 1500);
 }
 
 function espacio(e) {
